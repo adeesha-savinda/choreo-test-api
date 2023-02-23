@@ -38,14 +38,13 @@ public final table<Item> key(id) itemTable = table [
 # bound to port `9090`.
 service / on new http:Listener(9090) {
 
-    # A resource for generating greetings
-    # + name - the input string name
-    # + return - string name with hello message or error
-    resource function get greeting() returns Item[]|error {
+    # A resource for retrieving items 
+    # + return - an array of items
+    resource function get items() returns Item[]|error {
         return itemTable.toArray();
     }
 
-    resource function post greeting(string name) returns string|error {
+    resource function post item(string name) returns string|error {
         // Send a response back to the caller.
         if name is "" {
             return error("name should not be empty!");
