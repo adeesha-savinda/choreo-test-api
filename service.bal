@@ -31,6 +31,20 @@ public final table<Item> key(id) itemTable = table [
                 color: "Red, White, Black",
                 material: "100% Acrylic"
             }
+        },
+        {
+            id: 2,
+            name: "Arcadia Trail™ Dog Windbreaker",
+            description: "The right jacket for your pet while the two of you are out on the trail together can make all the difference when it comes to both warmth and comfort. This Arcadia Trail Windbreaker zippers shut, features a packable hood, has an opening for a leash, and even comes with a waste bag dispenser and waste bags. Comfortable and versatile, this unique jacket makes a great choice for the outdoor adventures you share with your pup",
+            image: "https://www.homesalive.ca/media/catalog/product/c/h/chilly-dog-fairisle-rag-wool-3.jpg",
+            stockDetail: {
+                id: 1,
+                itemId: 2,
+                quantity: 7.0,
+                intendedFor: "Dogs",
+                color: "Pink, Navy",
+                material: ""
+            }
         }
 ];
 
